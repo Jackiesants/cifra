@@ -1,0 +1,30 @@
+<html>
+<head> 
+<title> Codificador </title>    
+<script type="text/javascript" src="./js/script.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+
+    
+</head>
+<body>
+    
+<div>     
+<label> Texto: </label> <input type='text' id="texto-original"> <br> <br>
+
+
+<input type='radio' name='opcao' id="base" onClick="SomeInc()"> <label> Base 64  </label><br>
+<input type='radio' name='opcao' id="cifra" onClick="MostraInc()"> <label> Cifra de césar </label> <br>
+
+<input type='number' id="incremento" placeholder="incremento de César" style="visibility: hidden;"> 
+<br><br>
+<input type='button' value = 'Codificar' id="botao" onclick='VerificaSelecao()' > <br><br>
+
+
+<label> Conversão:  <label id="interno"> </label></label> 
+    <p id="convertido">  </p> 
+
+</div>
+    
+
+</body>
+</html>
